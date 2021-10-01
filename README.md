@@ -1,1 +1,1 @@
-[link to page](https://lmidang.github.io/Lab2/index.html)
+[link to page](https://lmidang.github.io/Lab2/)
