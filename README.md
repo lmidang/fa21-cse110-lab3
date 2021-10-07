@@ -1,1 +1,1 @@
-[link to page](https://lmidang.github.io/Lab2/)
+[link to page](https://lmidang.github.io/fa21-cse110-lab3/)
