@@ -1,5 +1,6 @@
-# Standup Meeting Date
-## Attendee Name
+# Standup Meeting Template
+## Standup Date, Time
+### Attendee Name
 **Current Status:** Current mood, any interesting events that happened in the past week.  
 
 **Progress from last standup:**  
