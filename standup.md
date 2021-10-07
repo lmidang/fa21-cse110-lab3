@@ -15,4 +15,4 @@
    
 **Current blockers:**  
 * Blocker #1
-* Blocker #1 
+* Blocker #2
