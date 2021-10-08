@@ -1,0 +1,156 @@
+:root {
+    /* color variables */
+    --melia-pink: rgb(237, 196, 226);
+    --melia-pink-vibrant: #bf7ea3;
+    --melia-purple: hsl(265, 47%, 72%);
+    --melia-blue: #0a0a0a;
+    --melia-dark: #19191a;
+    --melia-dark-red: #240800;
+}
+
+* {
+    color: var(--melia-pink);
+}
+
+body {
+    background-color: var(--melia-dark);
+}
+
+hr {
+    border: 1px solid var(--melia-blue);
+}
+
+h1 {
+    color: var(--melia-pink-vibrant);
+    display: inline-block;
+    font-family: 'Ephesis', cursive;
+}
+
+p, ul {
+    padding: 0;
+    margin: 0 0 1ex 0;
+}
+
+div p {
+    color:var(--melia-purple);
+}
+
+li > ol > li {
+    color:var(--melia-purple);
+}
+
+p ~ ul {
+    padding-left: 10px;
+}
+
+p + img {
+    background-color:var(--melia-pink-vibrant);
+}
+
+div.diagram {
+    padding-left: 10px;
+}
+
+input, textarea, select {
+    color:black;
+}
+
+.heading {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--melia-dark);
+    margin: auto;
+}
+
+a:hover {
+    color:var(--melia-purple);
+}
+
+a:active {
+    color:violet;
+}
+
+a[href$=".html"] {
+    color: var(--melia-pink);
+}
+
+/* Navigation styling */
+#nav-link {
+    padding: .5em;
+    border-right: .5ex double var(--melia-blue);
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Meeting notes styling */
+.notes-container {
+    display: inline-grid;
+    grid-template-columns: [topic] 100px [notes] auto [assigned] 100px [end];
+    grid-auto-rows:minmax(15px, auto);
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    justify-items: start;
+}
+
+.notes-topic {
+    grid-column: 1;
+}
+.notes-notes {
+    grid-column: 2;
+    list-style-position: inside;
+}
+
+.notes-assigned {
+    grid-column: 3;
+    list-style-position: inside;
+    text-align: right;
+}
+
+.notes-block {
+    display: block;
+    border-bottom: 2pt dashed var(--melia-blue);
+    margin-left: 0.3cm;
+}
+
+.notes-subtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+    color: var(--melia-pink-vibrant);
+    text-decoration: underline dotted var(--melia-pink-vibrant);
+    position: sticky;
+}
+
+.notes-attendants {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column-wrap;
+    height: 1lh;
+    width: 30vw;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--melia-pink-vibrant);
+    border-radius: 25px;
+    margin: 0.1cm 0.1cm 0.5cm 0.1cm;
+    padding-top: 2ex;
+    padding-bottom: 0ex;
+    padding-left: 4ex;
+    padding-right: 0ex;
+    background-color: var(--melia-dark-red);
+    position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+    .notes-attendants {
+        width: 20vw;
+    }
+}
+
+.submit-button {
+    background-color: var(--melia-dark-red);
+    border: 2px solid pink
+}

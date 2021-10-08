@@ -4,30 +4,38 @@
         <title>Stardust Crusaders</title>
         <meta name="author" content="Lynn">
         <link rel="icon" type="image/png" href="files/jotaroyare.png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="meetingnotes.css">
     </head>
     <body>
-        <header>
-            <h1>Meeting Notes</h1>
-            <p>Make sure to read this if you missed a meeting.</p>
-            <hr>
-        </header>
-        <nav>
-            <a href="index.html">index</a>
-            <hr>
-        </nav>
+        <div class="heading">
+            <header>
+                <h1>Meeting Notes</h1>
+                <p>Make sure to read this if you missed a meeting.</p>
+                <hr>
+            </header>
+            <nav>
+                <a id="nav-link" href="index.html">index</a>
+                <a id="nav-link" href="index.html">index2</a>
+                <hr>
+            </nav>    
+        </div>
         <main>
-            <section>
-                <h3>10.01.21 Brainstorming</h3> 
+            <section class="notes-block">
+                <h3 class="notes-subtitle">10.01.21 Brainstorming</h3> 
                 <h2>Tarot Card First Brainstorm</h2>
-                <section>
-                    <p>Attendants</p>
-                    <ul>
-                        <li>Jotaro</li>
-                        <li>Abdul</li>
-                        <li>Joseph</li>
-                        <li>Kakyoin</li>
-                        <li>Polnareff</li>
-                    </ul>
+                    <div class="notes-attendants">
+                        <p>Attendants
+                            <ul>
+                                <li>Jotaro</li>
+                                <li>Abdul</li>
+                                <li>Joseph</li>
+                                <li>Kakyoin</li>
+                                <li>Polnareff</li>
+                            </ul>
+                        </p>    
+                    </div>
                     <p>Current Agenda</p>
                     <ol>
                         <li>Unfinished business
@@ -43,30 +51,35 @@
                             </ol>
                         </li>
                     </ol>
-                </section>
-                <section>
-                    <p>Ideas</p>
-                    <ul>
-                        <li><b>Lorem Ipsum</b>  is simply dummy text of the printing and typesetting industry.</li>
-                        <li>It is a <em>long established fact</em> that a <strong>reader will be distracted</strong> by the readable content of a page when looking at its layout.</li>
-                        <li>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (<i>The Extremes of Good and Evil</i>) by Cicero, written in 45 BC.</li>
-                    </ul>
-                    <p><span>Questions</span></p>
-                    <p><b>Where does it come from?</b><br>
-                        Contrary to popular belief, <a href="https://www.lipsum.com/">Lorem Ipsum</a> is not simply random text.</p>
-                </section>
+                    <div class="notes-container">
+                        <p class="notes-topic">Ideas</p>
+                        <ul class="notes-notes">
+                            <li><b>Lorem Ipsum</b>  is simply dummy text of the printing and typesetting industry.</li>
+                            <li>It is a <em>long established fact</em> that a <strong>reader will be distracted</strong> by the readable content of a page when looking at its layout.</li>
+                            <li>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (<i>The Extremes of Good and Evil</i>) by Cicero, written in 45 BC.</li>
+                        </ul>
+                        <ul class="notes-assigned">
+                            <li>Jotaro</li>
+                        </ul>
+                        <p class="notes-topic"><span>Questions</span></p>
+                        <p class="notes-notes"><b>Where does it come from?</b><br>
+                            Contrary to popular belief, <a href="https://www.lipsum.com/">Lorem Ipsum</a> is not simply random text.</p>    
+                    </div>
             </section>
-            <section>
-                <h3>10.02.21 Planning</h3> 
+            <section class="notes-block">
+                <h3 class="notes-subtitle">10.02.21 Planning</h3> 
                 <h2>Tarot Card Planning</h2>
                 <section>
-                    <p>Attendants</p>
-                    <ul>
-                        <li>Jotaro</li>
-                        <li>Joseph</li>
-                        <li>Polnareff</li>
-                        <li>Abdul</li>
-                    </ul>
+                    <div class="notes-attendants">
+                        <p>Attendants</p>
+                        <ul>
+                            <li>Jotaro</li>
+                            <li>Joseph</li>
+                            <li>Polnareff</li>
+                            <li>Abdul</li>
+                        </ul>
+                    </div>
+                    
                     <p>Current Agenda</p>
                     <ol>
                         <li>Unfinished business
@@ -82,33 +95,38 @@
                         </li>
                     </ol>
                 </section>
-                <section>
-                    <p>Finalized Idea:</p>
-                    <ul>
-                        <li><b>Lorem Ipsum</b>  is simply dummy text of the printing and typesetting industry.</li>
-                        <li>It is a <em>long established fact</em> that a <strong>reader will be distracted</strong> by the readable content of a page when looking at its layout.</li>
-                        <li>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (<i>The Extremes of Good and Evil</i>) by Cicero, written in 45 BC.</li>
-                    </ul>
-                    <div class="diagram">
-                        <p>Circle Diagram</p>
-                        <img src="files/simple_circle.png" alt="A circle diagram" width="250">
-                        <p>Audio</p>
-                        <audio controls autoplay muted>
-                            <source src="files/20211001_124302_1.mp3" type="audio/mp3">
-                            Browser doesn't support audio.
-                        </audio>
-                        <details>
-                            <summary>Demonstration</summary>  
-                            <video width="600" controls>
-                                <source src="files/20211001_124302_1.mp4" type="video/mp4">
-                                Browser doesn't support video.
-                            </video>  
-                        </details>                    
+                <div class="notes-container">
+                    <p class="notes-topic">Finalized Idea:</p>
+                    <div class="notes-notes">
+                        <ul>
+                            <li><b>Lorem Ipsum</b>  is simply dummy text of the printing and typesetting industry.</li>
+                            <li>It is a <em>long established fact</em> that a <strong>reader will be distracted</strong> by the readable content of a page when looking at its layout.</li>
+                            <li>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (<i>The Extremes of Good and Evil</i>) by Cicero, written in 45 BC.</li>
+                        </ul>
+                        <div class="diagram">
+                            <p>Circle Diagram</p>
+                            <img src="files/simple_circle.png" alt="A circle diagram" width="250">
+                            <p>Audio</p>
+                            <audio controls autoplay muted>
+                                <source src="files/20211001_124302_1.mp3" type="audio/mp3">
+                                Browser doesn't support audio.
+                            </audio>
+                            <details>
+                                <summary>Demonstration</summary>  
+                                <video width="600" controls>
+                                    <source src="files/20211001_124302_1.mp4" type="video/mp4">
+                                    Browser doesn't support video.
+                                </video>  
+                            </details>                    
+                        </div>
                     </div>
-                    <p>Questions</p>
-                    <p><b>Where does it come from?</b><br>
+                    
+                    <p class="notes-topic">Questions</p>
+                    <p class="notes-notes"><b>Where does it come from?</b><br>
                         Contrary to popular belief, <a href="https://www.lipsum.com/">Lorem Ipsum</a> is not simply random text.</p>                 
-                </section>
+
+                </div>
+                
             </section>
         </main>
         <div class="signup">
@@ -148,7 +166,7 @@
                     <label for="date">Today's date: </label>
                     <input type="date" id="date">
                     <br><br>
-                    <button type="button">Submit</button>
+                    <button class="submit-button" type="button">Submit</button>
                 </fieldset>
             </form>
         </div>
